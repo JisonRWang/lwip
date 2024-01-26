@@ -210,7 +210,7 @@ struct pbuf {
   /** misc flags */
   u8_t flags;
 
-  /**
+  /** 初始化的时候被设置为1,因此释放pbuf时必须是1才能释放。
    * the reference count always equals the number of pointers
    * that refer to this pbuf. This can be pointers from an application,
    * the stack itself, or pbuf->next pointers from a chain.

@@ -1607,7 +1607,7 @@
 #define LWIP_PBUF_REF_T                 u8_t
 #endif
 
-/**
+/** 应该是接入LWIP的应用自己如果需要的话，自己实现这个宏。
  * LWIP_PBUF_CUSTOM_DATA: Store private data on pbufs (e.g. timestamps)
  * This extends struct pbuf so user can store custom data on every pbuf.
  */
